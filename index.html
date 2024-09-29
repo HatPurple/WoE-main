@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="WarOfElements.js" async></script>
+  
+</head>
+<body>
+    <div id="game-container">
+        <h1>War of Elements</h1>
+        <div id="score">Puntuación Jugador: 0 | Puntuación CPU: 0</div>
+        <div id="turn-indicator">Turno Actual: Jugador</div>
+        <div id="round-indicator">Ronda: 1</div>
+        <div id="deck-count">Cartas en el Mazo: 36</div>
+        <div id="deck" class="pulse">36</div>
+        <div id="message"></div>
+        <div id="played-cards">
+          <div id="player-played" class="card"></div>
+          <div id="cpu-played" class="card"></div>
+        </div>
+        <div id="game-area">
+          <div id="player-hand" class="hand"></div>
+          <div id="cpu-hand" class="hand"></div>
+        </div>
+        <button id="new-game-button">Nuevo Juego</button>
+        <button id="help-button">Ayuda</button>
+      </div>
+      
+      <div id="popup">
+        <div id="popup-content">
+          <h2 id="popup-title"></h2>
+          <div id="game-summary"></div>
+          <button id="close-popup">Cerrar</button>
+        </div>
+      </div>
+
+      <!-- Nuevo popup para las reglas del juego -->
+      <div id="rules-popup" class="popup">
+        <div class="popup-content">
+          <h2>Reglas del Juego</h2>
+          <div id="rules-text">
+            <!-- Aquí irán las reglas del juego -->
+          </div>
+          <button id="close-rules-popup">Cerrar</button>
+        </div>
+      </div>
+</body>
+</html>
